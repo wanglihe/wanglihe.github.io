@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta name="author" content="王礼鹤" />
+    <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
+
+    <title>有关自然数和自然数内基本问题的总结 - 王礼鹤的博客</title>
+
+
+
+      <link rel="stylesheet" href="/theme/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="/theme/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="/theme/css/pygment.css" />
+      <link rel="stylesheet" href="/theme/css/voidybootstrap.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+  </head>
+
+  <body>
+   
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+	   <div class="navbar-header">
+		<button type="button" class="navbar-toggle" 
+				data-toggle="collapse" data-target="#main-navbar-collapse">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="/" rel="home">
+          <i class="fa fa-home fa-fw fa-lg"> </i> </a>
+       </div>
+
+      <div class="collapse navbar-collapse" id="main-navbar-collapse">
+        <ul class="nav navbar-nav">
+              <li>
+                <a href="/pages/关于.html">关于</a>
+              </li>
+              <li>
+                <a href="/pages/求职.html">求职</a>
+              </li>
+            <li class="divider"></li>
+            <li class="">
+              <a href="/archives.html">Archives</a>
+            </li>
+          <li class="divider"></li>
+        </ul> <!-- /nav -->
+      </div> <!-- /navbar-collapse -->
+	  </div> <!-- /container -->
+    </nav> <!-- /navbar -->
+
+	<div class="jumbotron" id="overview">
+	  <div class="container">
+		<h1><a href="/">王礼鹤的博客</a></h1>
+		<p class="lead">——关注稳定实时高并发（学海无涯，回头是岸）（有钱就任性，没钱就认命）（麻雀虽小，五毒俱全）（并行是世界的本质，实时是生命的基础）</p>
+	  </div>
+	</div>
+
+    <div class="container" id="main-container">
+      <div class="row">
+        <div class="col-md-9" id="content">
+<article itemscope="itemscope" itemtype="http://schema.org/BlogPosting">
+  <header class="article-header">
+<abbr class="article-header-date">
+  Thu 12 March 2015
+</abbr> <h1>
+  <a href="/有关自然数和自然数内基本问题的总结.html" rel="bookmark"
+     title="Permalink to 有关自然数和自然数内基本问题的总结">
+    有关自然数和自然数内基本问题的总结
+  </a>
+</h1><div class="article-header-info">
+  <p>
+      Posted by <a href="/author/wanglihe.html">wanglihe</a>
+    in 
+    <a href="/category/uncategorized.html">
+      Uncategorized</a>
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->  </header>
+  <div class="content-body" itemprop="text articleBody">
+	<p>上一篇 <a class="reference external" href="/加法交换律的证明.html">加法交换律的证明</a> 给出了我对数学的基本理解，写的很随心，某些地方可能还有点童子鸡不宜，所以这一篇续篇我将用比较正式的语言，给出数的基础定义和相关推论。从一大堆定义开始——</p>
+<p>1或一的定义：人脑对于可以独立抽象的物体，袪除掉所有外在的特性，如形状颜色大小等，而形成的抽象。如果非举个例子，你在头脑中想像一个“独立之物”，它的特性除了存在，什么都没有，那么这个东西基本可以“名之”为“1”或“一”了。这个东西叫啥都行，其实呢啥也不叫，名之为“1”或“一”，完全就是因为在数学范畴内叫的方便，毕竟是用来在数量方面进行讨论。更深入的思考就需要学学哲学和《道德经》了。</p>
+<p>数1的定义：人脑对于单独的物体，在数量方面的抽象概念。</p>
+<p>数2的定义：人脑对于单独物体和单独物体，在数量方面的抽象。</p>
+<p>数3的定义：人脑对于单独物体和单独物体和单独物体，在数量方面的抽象。</p>
+<p>以此类推，直到你的脑容量上限，是你能认识的全部数，有关于这部分内容我会单开一篇文章讨论工程极限。</p>
+<p>自然数：人脑对于人类因为物体数量而认识的数的总体抽象，开始是部分的数，在人类掌握某些概念后，得到扩张，具体哪些概念和扩张方法，下文再说。自然数所对应的值来自于所对应的实际单独物体的数量，也即1的数量，因为1是抽象和无差别的，所以统计的顺序不影响实际的值(交换律和结合律的基础)。</p>
+<p>数0的定义：人类对于“无”在数量方面的抽象，比如没有苹果，就是0个苹果。也是人类对于基准的抽象，比如以海平面为基础，山高出海面500米，则记海平面为0米，山高500米。0历史上被认为是没有意义的，长期没有抽象，抽象后又被长期打压没有加入自然数的队伍，不过现在被任命为自然数排头，与队长1的关系很暧昧。</p>
+<p>和：两个自然数对应的物体摆在一起，对应的那个数就是两个数的和。因为和也是物体数量的抽象，所以两个数的和也是自然数。</p>
+<p>求和：找到两个自然数的和。</p>
+<p>自然数的单位：人类对于单独物体“一”数量上的抽象，定义为自然数的单位，是数量的单元和基准，不可分解，不可合成。自然数单位对应的自然数是1。</p>
+<p>自然数的大小：自然数本来快快乐乐的存在着，互相之间没有比较。但是人类大脑中有一种大小的抽象（有关于这个部分在人工智能的另一篇中会说点），对应到数量上，就有了数的大小关系。选择与人类需求相对应的目标，我将自然数的大小定义为——一个自然数小于它自己与1的和。这个定义我认为比先定义绝对值和顺序什么的要合理，因为没定义大小无法定义顺序，也就没绝对值什么事了。而且这个定义我自己给出的时候，我的大脑也表示不解，反正就是这个奇怪的定义很好用。</p>
+<p>自然数的枚举：一个自然数与1的和，与这个数之间没有其他的自然数（自然数单位）。又由于自然数的有大小（大小的定义），所以自然数可以从0开始，用与1连续求和的方式，从小到大进行枚举。</p>
+<p>枚举序列：通过枚举产生有序列表。</p>
+<p>一一对应：两个枚举序列，每个枚举逐一进行对应，称为一一对应。多个序列使用这一特性可以达到一根手指对应一根原木，对应一张纸，对应1的效果，数学作为工具参与实物的计量，计算，统计，甚至整个数学的对于人类的意义，可能全基于此“一一对应”的思想。</p>
+<p>自然数序列（从小到大）：将已知的自然数按从小到大排列构成自然数的序列。也即是由0开始自然数枚举得到的数的序列。</p>
+<p>相邻：以自然数序列为基础，两个自然数之间如果没有其他的自然数，称作两个自然数相邻。一个自然数与1的和，与这个自然数相邻。</p>
+<p>加：为求和所进行的操作的抽象。</p>
+<p>加法交换律：求和的结果是一个自然数，自然数所对应的值与统计其中单位1的顺序无关，加法交换律自然成立。</p>
+<p>加法结合律：求和的结果是一个自然数，自然数所对应的值与统计其中单位1的顺序无关，加法结合律自然成立。</p>
+<p>加法交换律和结合律思考：其实，这两个定律并没有那么的“基础”，之后以单独提出，其实来源于我们的书写以及数学演算系统。我们的横向书写演算系统中，书面所能描述的演算，所有的“变换”操作最终可以归结为两个数的交换和三个数的结合，这才是这两个定律重要的原因。演算系统还要再开一篇单说。假设我们的演算系统不是横向书写，比如说有坚向的共同组成，那么可能我们需要更多的“横竖”等于“竖横”的演算定律，来参与化简相应的计算。而就这两个定律而言，除掉演算的需要，就计算的真正内涵来讲，我认为其实最基本的应该是“基准增量”定律，（参考0的定义），表述为基准o之上，加入一个数a，再加入别一个数b，所得的和与加入的顺序无关，即o+a+b=o+b+a。这个定律去掉o（或者说令o等于0），直接就是加法交换律，也可以证明加法结合律：o+(a+b)=(a+b)+o（应用交换律）=a+b+o(拆括号)=a+o+b(基准增量定律)=o+a+b(o和a使用加法交换律)，命题加法结合律得证。</p>
+<p>哲学问题：数是客观存在的吗？如果是客观存在的，那为什么数只在人脑的想象中？如果不是，那人类没想象过的数还存在吗？答：数是人脑（智慧）对现实的反应，所以数不是客观存在的。但数的抽象具有通用和不变性，具有客体的性质。同时，用于抽象数的客体是随时存在的。人类没想象过的数不存在，但是在你需要时它就存在了。</p>
+<p>给用数学归纳法和皮亚诺公理证明交换律的：别他妈扯淡了，皮亚诺公理定义了自然数，数学归纳法的正确性由皮亚诺公理保证；再用数学归纳法证明皮亚诺公理提出的自然数满足交换律，说明皮了亚诺公理（定义的自然数上的交换律）确实是满足于皮亚诺公理，鸡蛋双生了（也就是说这什么也证明不了，只能说明皮亚诺公理自洽）。也就是说根本问题在于，皮亚诺公理定义出的“自然数”，就是我们要讨论的自然数吗？它们之间的联系是什么呢？所以我们必须先定义，或是形象的抽象自然数，才能验证皮亚诺公理符合自然数（公理与定义等价），之后数学归纳法才能生效。</p>
+<p>无穷大：对自然数进行不断的枚举，得到的数将趋近于无穷大。无穷大虽然到达不了，但不妨碍我们将其定义出来，并讨论它的性质。</p>
+<p>代数：对数的共性进行抽象（相对于实体的二级抽象），我们可以得到高阶抽象概念，跟用“1”来表示任一个物体的数量概念，我们可以用n指代任一自然数。用某种方法指代数，甚至指代操作，并参与推演的方法叫作代数。</p>
+<p>后续……</p>
+<p>符号的定义，抽象能力，内涵，组合与外延：</p>
+<p>减法定义：</p>
+<p>计算定义：</p>
+<p>乘法定义：</p>
+<p>除法定义：</p>
+<p>整数扩张与计算有效性：</p>
+<p>可比数扩张与计算有效性：</p>
+<p>极限定义：</p>
+<p>实数扩张与计算有效性：</p>
+<p>函数抽象与数学变换：</p>
+<p>虚数定义：</p>
+<p>复数扩张与计算有效性：</p>
+<p>这些都与自然数关系很远，不符合本文题目，请读者自便。</p>
+
+  </div>
+  
+
+</article>
+        </div><!-- /content -->
+
+        <div class="col-md-3 sidebar-nav" id="sidebar">
+
+<div class="row">
+
+
+<div class="col-xs-6 col-md-12">
+<h4><i class="fa fa-folder fa-fw fa-lg"></i> Categories</h4>
+<ul class="list-unstyled category-links">
+  <li><a href="/category/cong-zi-ran-shu-dao-ji-suan-ji.html" >
+    <i class="fa fa-folder-open fa-fw fa-lg"></i> 从自然数到计算机</a></li>
+  <li><a href="/category/uncategorized.html" >
+    <i class="fa fa-folder-open fa-fw fa-lg"></i> Uncategorized</a></li>
+  <li><a href="/category/wan-zhuan-vps.html" >
+    <i class="fa fa-folder-open fa-fw fa-lg"></i> 玩转vps</a></li>
+</ul>
+</div>
+
+</div> <!-- /row -->
+
+
+<h4><i class="fa fa-tags fa-fw fa-lg"></i> Tags</h4>
+<p class="tag-cloud">
+<span class="tag-4">
+    <a href="/tag/elf.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>elf
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/wei-xu.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>位序
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/utf-8.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>utf-8
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/xml.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>xml
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/lfs.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>lfs
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/fu-hao.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>符号
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/xiao-wei.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>小尾
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/zi-jie-xu.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>字节序
+    </a>
+</span>
+<span class="tag-2">
+    <a href="/tag/linux.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>linux
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/jie.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>节
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/elf64.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>elf64
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/vps.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>vps
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/semi-structured.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>semi-structured
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/json.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>json
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/semistructured.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>semistructured
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/smallest.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>smallest
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/utf8.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>utf8
+    </a>
+</span>
+<span class="tag-1">
+    <a href="/tag/shu-xue.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>数学
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/structured.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>structured
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/zi-ran-shu.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>自然数
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/da-wei.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>大尾
+    </a>
+</span>
+</p>
+
+
+<hr />
+
+        </div><!--/sidebar -->
+      </div><!--/row-->
+    </div><!--/.container /#main-container -->
+
+    <footer id="site-footer">
+ 
+      <address id="site-colophon">
+        <p class="text-center text-muted">
+        Site built using <a href="http://getpelican.com/" target="_blank">Pelican</a>
+        &nbsp;&bull;&nbsp; Theme based on
+        <a href="http://www.voidynullness.net/page/voidy-bootstrap-pelican-theme/"
+           target="_blank">VoidyBootstrap</a> by 
+        <a href="http://www.robertiwancz.com/"
+           target="_blank">RKI</a>  
+        </p>
+      </address><!-- /colophon  -->
+    </footer>
+
+
+    <!-- javascript -->
+
+    <script src="/theme/js/bootstrap.min.js" ></script>
+
+  </body>
+</html>

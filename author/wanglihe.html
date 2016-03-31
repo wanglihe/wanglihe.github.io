@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content=" Posts by author wanglihe" />
+    <meta name="author" content="王礼鹤" />
+    <meta name="generator" content="Pelican (VoidyBootstrap theme)" />
+
+    <title>Author:wanglihe - 王礼鹤的博客</title>
+
+
+
+      <link rel="stylesheet" href="/theme/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="/theme/css/font-awesome.min.css" />
+      <link rel="stylesheet" href="/theme/css/pygment.css" />
+      <link rel="stylesheet" href="/theme/css/voidybootstrap.css" />
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="/favicon.ico" />
+  </head>
+
+  <body>
+   
+    <nav class="navbar navbar-default" role="navigation">
+      <div class="container">
+	   <div class="navbar-header">
+		<button type="button" class="navbar-toggle" 
+				data-toggle="collapse" data-target="#main-navbar-collapse">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="/" rel="home">
+          <i class="fa fa-home fa-fw fa-lg"> </i> </a>
+       </div>
+
+      <div class="collapse navbar-collapse" id="main-navbar-collapse">
+        <ul class="nav navbar-nav">
+              <li>
+                <a href="/pages/关于.html">关于</a>
+              </li>
+              <li>
+                <a href="/pages/求职.html">求职</a>
+              </li>
+            <li class="divider"></li>
+            <li class="">
+              <a href="/archives.html">Archives</a>
+            </li>
+          <li class="divider"></li>
+        </ul> <!-- /nav -->
+      </div> <!-- /navbar-collapse -->
+	  </div> <!-- /container -->
+    </nav> <!-- /navbar -->
+
+	<div class="jumbotron" id="overview">
+	  <div class="container">
+		<h1><a href="/">王礼鹤的博客</a></h1>
+		<p class="lead">——关注稳定实时高并发（学海无涯，回头是岸）（有钱就任性，没钱就认命）（麻雀虽小，五毒俱全）（并行是世界的本质，实时是生命的基础）</p>
+	  </div>
+	</div>
+
+    <div class="container" id="main-container">
+      <div class="row">
+        <div class="col-md-9" id="content">
+<ol class="breadcrumb">
+    <li><a href="/" title="Home" rel="home">
+		<i class="fa fa-home fa-fw fa-lg"></i> </a></li>
+    <li>Authors </li>
+    <li class="active">wanglihe</li>
+</ol>
+    <article>
+<abbr class="article-header-date">
+  Sat 16 April 2016
+</abbr> <h1>
+  <a href="/一种通用文件格式的思考.html" rel="bookmark"
+     title="Permalink to 一种通用文件格式的思考">
+    一种通用文件格式的思考
+  </a>
+</h1><div class="article-header-info">
+  <p>
+      Posted by <a href="/author/wanglihe.html">wanglihe</a>
+    in 
+    <a href="/category/uncategorized.html">
+      Uncategorized</a>
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->
+      <div class="summary">
+		<p>我们每一天都在用计算机处理各种数据。等等，重新思考一下，我们真的只在处理数据吗？
+不只，我们其实主要在处理各种“文件”，从中得到数据，又把数据存回到文件中。比如：
+我们处理今天的会议纪要，其实我们处理了文字数据，并将文字存在了一份文档文件中。
+我们修改了一项系统服务的配置选项，其实是将配置项从文件中读出来，修改后再存回文件
+中，而系统服务重新从配置文件中读出配置项并使之生效。</p>
+<p>那么什么是文件呢？我觉得我们似乎没有给文件本身下一下恰当的定义，再加上unix系统“一
+切皆是文件”的宣传，使本就雾里看花的文件愈加扑朔迷离。我觉得是时候好好的说一下什么是
+文件了。给文件本身下一个定义，并且让文件成为更好的处理数据的工具。</p>
+<p>按照传统一些，或者说直觉上来说，文件是这么一种东西：计算机处理数据，处理好了就需
+要存起来，以供之后使用。这种东西存在磁盘上，有一个确定的文件名，有时候有一个扩展
+名，两者加在一起，可以确定一个文件的存储位置，部分的确定文件的类型。后来文件太多
+了，经常遇到重名，于是磁盘上升级出一套叫做文件系统的东西，文件存在文件系统里，可
+以把文件分门别类放在各种目录中 ...</p>
+		<p class="content-emphasis"><a href="/一种通用文件格式的思考.html">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
+    <article>
+<abbr class="article-header-date">
+  Fri 21 August 2015
+</abbr> <h1>
+  <a href="/什么是非结构化数据，结构化数据和半结构化数据.html" rel="bookmark"
+     title="Permalink to 什么是非结构化数据，结构化数据和半结构化数据">
+    什么是非结构化数据，结构化数据和半结构化数据
+  </a>
+</h1><div class="article-header-info">
+  <p>
+      Posted by <a href="/author/wanglihe.html">wanglihe</a>
+    in 
+    <a href="/category/cong-zi-ran-shu-dao-ji-suan-ji.html">
+      从自然数到计算机</a>
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->
+      <div class="summary">
+		<p>教小弟们学习xml，顺便先搞下utf-8，结果 <a class="reference external" href="/什么是大尾和小尾，从记录的节讲起.html">大小尾</a> 他们跪了，结构化数据又跪了，现在的研究生都学些什么东西，基础课的时间都用来吃屎啦！</p>
+<p>按照历史顺序讲解几种数据保存模式最为有利，便于理解，那么就先说非结构化数据吧。</p>
+<div class="section" id="id3">
+<h2>非结构化数据</h2>
+<p>非结构化数据基本上处于人们还不知道啥叫数据的时候进行的数据记录，常见于各种历史书和各种自我介绍。举个例子来说，比如我叫王礼鹤，24岁，长得帅，身高1米八，爱好女，擅长各种体位，我来自美丽的沧月，是当地富108代。另一个同等地位的历史人物的记载是这样的，昔在黄帝，生而神灵，弱而能言，幼而徇齐，长而敦敏，成而登天。从上面两段文字中，我们可以得到一些信息，但是形式并不统一，很难被进一步“快速使用”。于是人们抽象出“数据”的概念，比如姓名、出生日期、爱好，等等。当然，长久以来，这些数据都是以描述的方式进行的，是非结构化的，大约都长这样：张仲景，汉朝人，著名医学家 ...</p></div>
+		<p class="content-emphasis"><a href="/什么是非结构化数据，结构化数据和半结构化数据.html">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
+    <article>
+<abbr class="article-header-date">
+  Sun 16 August 2015
+</abbr> <h1>
+  <a href="/什么是大尾和小尾，从记录的节讲起.html" rel="bookmark"
+     title="Permalink to 什么是大尾和小尾，从数的记录到“节”">
+    什么是大尾和小尾，从数的记录到“节”
+  </a>
+</h1><div class="article-header-info">
+  <p>
+      Posted by <a href="/author/wanglihe.html">wanglihe</a>
+    in 
+    <a href="/category/cong-zi-ran-shu-dao-ji-suan-ji.html">
+      从自然数到计算机</a>
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->
+      <div class="summary">
+		<p>小弟们不懂UTF-8，于是指导他们总结学习做报告，结果这帮家伙居然查了两天都说不明白大小尾，只知道“从右往左”是小尾，我真想吐他们一脸狗屎，回家吃杂碎面去吧！看了看网上好像还真没有说得比较透的，那我就给他们讲了一遍，又想了想，要不干脆写个博客吧。</p>
+<p>说起这个大小尾，其实跟计算机没啥关系，好像好多计算机用的东西都跟计算机没关系，没办法，毕竟历史才几十年，很少有什么的真正的专业“工具”。这个东西起源于“计数”，或是精确的说是“记数”用的。最开始，每个数都有一个确定的符号表示，比如一二三四五，比如卌，表示四十。但是数是无穷无尽的，总不能创造出无穷无尽的符号吧。好在符号可以有限，但符号的组合可以无穷无尽，于是就涉及到用符号的组合表示数了。那么都是怎么组合的呢？基于人类书写的习惯，虽然也有些异类，但大体上都是按书写顺序把数拼起来。于是，每一个书写的位置就变得有意义了，可以称之为一个“阶”或者是一个“位”。每一个位上数表示这个位上的大小，而位表示大小的级别。于是，位之间的关系就需要确定一下才好表示大小，比如“123 ...</p>
+		<p class="content-emphasis"><a href="/什么是大尾和小尾，从记录的节讲起.html">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
+    <article>
+<abbr class="article-header-date">
+  Tue 30 June 2015
+</abbr> <h1>
+  <a href="/炒股一月记.html" rel="bookmark"
+     title="Permalink to 炒股一月记">
+    炒股一月记
+  </a>
+</h1><div class="article-header-info">
+  <p>
+      Posted by <a href="/author/wanglihe.html">wanglihe</a>
+    in 
+    <a href="/category/uncategorized.html">
+      Uncategorized</a>
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->
+      <div class="summary">
+		<p>因为看好后市，从来不喜欢赌的我也想买一些跟股市有关的基金，享受一下股市的红利。找了好久，找到一种叫做ETF的股指基金。但是这东西没地方买，逼不得已，还是开了一个股票账户，因为我只能买到180ETF，50ETF这种基金对应的类似股票的东西。从6月1号就算基本入市，到目前为止正好跌掉10%。能力不足是一方面，运气不好也是一方面，这个6月完全可以用崩盘来形容，有连续两周合并跌幅20%。我觉得，以我的坏运气，可能影响了整个股市，对不起大家了。6月最后一天，我最后止损了一个百分点，因为上午有整体由牛转熊的架势，于是大盘从下午开始直涨10%，最后收涨5%左右，明明基本上一个下午可以挽救几乎一个月的损失，就这样失去了。认倒霉，还是承认不应该理性，总之我完全傻掉了。</p>
+<p>当然，这篇博文不是说自己怎么赔的，也不是教大家怎么赚的，估计也不会有人听。主要是想说说对中国股票交易的一些思考。</p>
+<p>第一，股票交易公平吗？就我的观察而言，非常的公平，想买的时候可以买，想卖的时候可以卖，而不像真正的基金什么的，买了一份，哪怕想卖掉，中途拿不出来。好多人都说基金经理是骗子，但没人说股市是骗子（结尾自打脸，我就乐意这么说 ...</p>
+		<p class="content-emphasis"><a href="/炒股一月记.html">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
+    <article>
+<abbr class="article-header-date">
+  Wed 17 June 2015
+</abbr> <h1>
+  <a href="/代码从哪里开始执行.html" rel="bookmark"
+     title="Permalink to 代码从哪里开始执行">
+    代码从哪里开始执行
+  </a>
+</h1><div class="article-header-info">
+  <p>
+      Posted by <a href="/author/wanglihe.html">wanglihe</a>
+    in 
+    <a href="/category/uncategorized.html">
+      Uncategorized</a>
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->
+      <div class="summary">
+		<p><a class="reference external" href="/如何生成最小的elf64.html">上一篇</a> 们制作了一个最小的可执行的并且结构完整的elf64文件。从中我们看到程序的执行需要一个入口，这个入口其实就是指出了一个偏移量，让操作系统从文件那个位置开始执行。那么操作系统，或者更深一步，计算机启动时，第一个程序，即所谓的固件（firmware），是这样执行的吗？其实大同小异，毕竟elf是作为前代各种执行结构的总结而设计的，这些前代当然也包括操作系统和各种固件。学习这一部分知识应该用哪个实例呢？我想到了计算机中最广泛存在的底层固件bios。好，接下来我就以kvm的默认bios——seabios来说说，代码从哪里开始执行，都做了什么。这一部分与硬件关系紧密，seabios会牵扯到x86指令cpu的一些细节，其他指令集未必如此，但总体的大结构是相似的，学习时注意。</p>
+<p>那么首先，我先说下BIOS都干了什么，然后就以执行顺序讲解。BIOS整体来讲，就是初始化IO系统，毕竟人家叫basic
+IO
+system。从cpu角度来讲，IO就是各种线啊，电路啊什么的，设个值，代表可用。如何用呢？每一个连到cpu上的设备（暂且你就认为每一个吧）都对应到cpu的一个口(port)上，用起来像内存，你可以认为是一个内存地址，当然也可以认为是一个编号，反正从程序员的角度看就是一个整数 ...</p>
+		<p class="content-emphasis"><a href="/代码从哪里开始执行.html">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
+    <article>
+<abbr class="article-header-date">
+  Thu 30 April 2015
+</abbr> <h1>
+  <a href="/如何生成最小的elf64.html" rel="bookmark"
+     title="Permalink to 如何生成最小的elf64?">
+    如何生成最小的elf64?
+  </a>
+</h1><div class="article-header-info">
+  <p>
+      Posted by <a href="/author/wanglihe.html">wanglihe</a>
+    in 
+    <a href="/category/uncategorized.html">
+      Uncategorized</a>
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->
+      <div class="summary">
+		<p>作为理解机器码如何执行的重要的一环，我需要制作一个最小最简单的程序。本来，这个东西应该是在硬件和软件的结合部分来学习的，也就是所谓的“固件
+firmware”。但是我在理解了所有的东西之后，在讲解上，反倒是觉得先说说操作系统上的进程更好。因为代码运行这个东西本质上是一样的，不同的是用什么方法启动它。而且在操作系统上实现了之后，对于学习其他东西更为方便，毕竟启动只是一个命令的事，不用“加电重启”。那么接下来，我就说说我是如何制作我的最小的可执行程序的，同时讲解有关启动的必要的知识。</p>
+<div class="section" id="id1">
+<h2>什么是elf64</h2>
+<p>计算机可以执行的指令其实是一些具体的命令有效编码成的二进制数后的一个二进制序列，不管它具体是什么吧，可以认为是一砣数据。那么计算机如何将其中的指令拿出来运行呢？所以需要一个具体的指示性的部分，告诉计算机，这段指令有多长，使用哪种cpu，从哪里开始，林林总总吧，这些东西。这些指示性的数据，一般存在文件头，加上其内部的真正的代码，就是一个有效的可执行程序了。windows系统上使用的这种头叫作PE，linux系统上，这种头就是elf，全称是Executable
+and Linkable
+Format，中文翻过来就比较土了，叫“可执行及可链接格式”。基本的elf是32位的数据格式，现在2015年了，大家的电脑基本都是64位的了，操作系统也是64位的了 ...</p></div>
+		<p class="content-emphasis"><a href="/如何生成最小的elf64.html">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
+    <article>
+<abbr class="article-header-date">
+  Tue 14 April 2015
+</abbr> <h1>
+  <a href="/lfs阅读手记.html" rel="bookmark"
+     title="Permalink to lfs阅读手记">
+    lfs阅读手记
+  </a>
+</h1><div class="article-header-info">
+  <p>
+      Posted by <a href="/author/wanglihe.html">wanglihe</a>
+    in 
+    <a href="/category/uncategorized.html">
+      Uncategorized</a>
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->
+      <div class="summary">
+		<p>一直知道lfs，很多人称之为真正的linux，如果你想真正的理解linux，一定要做一次lfs。于是我被这个殿堂级的难度吓尿了，一直修练，认为等我对自己认可时再来搞这个。后来忘了，哪怕是我几乎对自己的知识体系认可了。偶然想了起来，正好周末有空，于是打算搞一下，看看还有什么提高。当年还是6.几的lfs现在已经7.7了，不觉时光荏苒。</p>
+<p>那么lfs都讲了啥呢？</p>
+<p>第一章</p>
+<p>讲lfs是啥，毫无技术，可以认为是废话。</p>
+<p>第二章</p>
+<p>准备lfs所用磁盘空间，环境变量，基本废话</p>
+<p>第三章</p>
+<p>去下源码包，补丁包，没啥重点，而且我真的很希望能有一个总体包下载，但是文档上只有每个包的地址。记得用md5验证一下。</p>
+<p>第四章</p>
+<p>增加了tools目录，增加用户。啥有用的没说。</p>
+<p>第五章</p>
+<p>重头戏来了，构建基本的构建系统，需要各种改安装路径，修改编译参数至需要的最小值，整理头文件什么的。会编译的话，其实也没什么有用的东西，重点是溜一遍所有的包，看看每个包是干什么的。对于我而言，废话。对于不会的人而言 ...</p>
+		<p class="content-emphasis"><a href="/lfs阅读手记.html">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
+    <article>
+<abbr class="article-header-date">
+  Fri 10 April 2015
+</abbr> <h1>
+  <a href="/计数与计算.html" rel="bookmark"
+     title="Permalink to 计数与计算">
+    计数与计算
+  </a>
+</h1><div class="article-header-info">
+  <p>
+      Posted by <a href="/author/wanglihe.html">wanglihe</a>
+    in 
+    <a href="/category/cong-zi-ran-shu-dao-ji-suan-ji.html">
+      从自然数到计算机</a>
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->
+      <div class="summary">
+		<p>前一篇 <a class="reference external" href="/符号与计数.html">符号与计数</a> 我讲了人类用有限的符号和无限的空间，完成了记录无限的数的方法。接下来聊聊人类是怎样基于计数，完成计算的。</p>
+<div class="section" id="id3">
+<h2>计算大法一：实物计算</h2>
+<p>这种计算法可以认为从定义直接得到的方法，就是将数的对应物放在一块。比如两个数相加，你就拿两个数对应的石子，丢在一块，duang，计算完成。这种计算法其实比较不实用，比如找不到足够石子怎么办，而且几乎只对加法有用。但是这个方法很适合阐明计算的内涵。首先，计算是一个操作，不是什么神迹，也不复杂，计算这种操作甚至不需要智慧，只是单纯的放在一块。其次，计算的主体其实不必知道两个数各是多少，也不清楚计算的结果，而其结果对应到数，靠的是智慧的解读。</p>
+</div>
+<div class="section" id="id4">
+<h2>计算大法二：符号演算</h2>
+<p>这种计算法在搞定了计数之后就开始流行了，因为只需要用纸嘛，很经济。当然，每种计数法都有各自的演算规则，现代阿拉伯计数体系下基本使用坚式法。但是无论外在如何，内涵都是一致的，就是定义一个规则（当然其在算理上是正确的），应用到符号上，把两个符号变成一个新的符号，这个符号解读后对应的值，就是结果。承接上文，虽然我们在计算时不时的要完成值与符号的变换，以及各种的不承认，但归根结底仍然是计算本身不需要智慧 ...</p></div>
+		<p class="content-emphasis"><a href="/计数与计算.html">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
+    <article>
+<abbr class="article-header-date">
+  Wed 01 April 2015
+</abbr> <h1>
+  <a href="/符号与计数.html" rel="bookmark"
+     title="Permalink to 符号与计数">
+    符号与计数
+  </a>
+</h1><div class="article-header-info">
+  <p>
+      Posted by <a href="/author/wanglihe.html">wanglihe</a>
+    in 
+    <a href="/category/cong-zi-ran-shu-dao-ji-suan-ji.html">
+      从自然数到计算机</a>
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->
+      <div class="summary">
+		<p>前面讲到到了自然数，特别是讲到了数做为抽象产物，因其意义明确，可以用于交流。正如一位传大的哲学家说过：</p>
+<blockquote>
+如果说音乐是人类共同的语言，那么数学就是智慧的共同语言——王礼鹤</blockquote>
+<p>那么，我们用什么方式来交流数学呢？说到底，还是要从人类的抽象能力开始。想一想，我们除了抽象数，还抽象了什么？天地风雷，水火山泽，寒暑冷热，春夏秋冬，各种各样的概念。这些概念虽然不如数抽象，但是也是抽象概念。我们人类很善于做这种事。有了概念，要怎么记录呢？于是人类发明出各种各样的符号，与之对应。比如八卦中用“离”卦表示火，一个头发全白的外国大爷代表肯德基。这些画在地上，刻在墙上的，印在布上的图形完成了信息的记录与表达。简单的给符号的性质做一下总结：一、符号代表抽象概念，虽然画下来的符号长得并不完全一样，但代表的概念是一致的。二、符号本身的画法也是一种抽象，在一个体系之内（懒得说得更详细，领会精神），是独一无二的。三、符号在其体系内地位是等同的，没有顺序，识别符号靠的是某种神奇的定位能力，一下就对应到相应符号更概念上 ...</p>
+		<p class="content-emphasis"><a href="/符号与计数.html">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
+    <article>
+<abbr class="article-header-date">
+  Mon 16 March 2015
+</abbr> <h1>
+  <a href="/听听我说了什么，别问我是谁.html" rel="bookmark"
+     title="Permalink to 听听我说了什么，别问我是谁">
+    听听我说了什么，别问我是谁
+  </a>
+</h1><div class="article-header-info">
+  <p>
+      Posted by <a href="/author/wanglihe.html">wanglihe</a>
+    in 
+    <a href="/category/uncategorized.html">
+      Uncategorized</a>
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->
+      <div class="summary">
+		<p><a class="reference external" href="/images/51xOYCLyjGL.jpg"><img alt="fake" src="/images/51xOYCLyjGL.jpg" /></a></p>
+<p>（题图来自互联网）</p>
+<p>上过演讲课，也学过讲师培训，很多时候都听到一种技巧，就是如果想吸引听众，那么一定要做一个自我介绍，说清楚“我是谁（名字），今天主要讲什么，为什么我讲的这个东西对你有用，以及为什么是我来讲”，其中最后一条非常的重要，要表现出自己经验丰富（xx年经验），背景牛逼（名校，高学历，名企，高级职位），专业（技术专家，销售总监，辉煌战绩）。总之，具体讲什么无所谓，先要让听众觉得值得听，只要听了就有收获，甚至万一没有收获是自己没听懂。</p>
+<p>演讲者这样做其实无可厚非，我想说的是，演讲者不过是利用了“人性”，就像骗子利用贪小便宜的心理一样，都是研究了人性，用于自己的专业而已。但是，我对于这种技巧很是不赞同，因为这些技巧的使用，并无意义于内容。</p>
+<p>说回到这篇博文的主题，我希望的反而是读者提升自己的能力。因为这些技巧，让读者浪费了很多时间。不只是演讲，每一本商业化过重的书，每一篇过分包装的文章，都让读者得不偿失。所谓人生的修炼，不是很大一部分就是让人学会对抗自己的人性吗 ...</p>
+		<p class="content-emphasis"><a href="/听听我说了什么，别问我是谁.html">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
+    <article>
+<abbr class="article-header-date">
+  Thu 12 March 2015
+</abbr> <h1>
+  <a href="/有关自然数和自然数内基本问题的总结.html" rel="bookmark"
+     title="Permalink to 有关自然数和自然数内基本问题的总结">
+    有关自然数和自然数内基本问题的总结
+  </a>
+</h1><div class="article-header-info">
+  <p>
+      Posted by <a href="/author/wanglihe.html">wanglihe</a>
+    in 
+    <a href="/category/uncategorized.html">
+      Uncategorized</a>
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->
+      <div class="summary">
+		<p>上一篇 <a class="reference external" href="/加法交换律的证明.html">加法交换律的证明</a> 给出了我对数学的基本理解，写的很随心，某些地方可能还有点童子鸡不宜，所以这一篇续篇我将用比较正式的语言，给出数的基础定义和相关推论。从一大堆定义开始——</p>
+<p>1或一的定义：人脑对于可以独立抽象的物体，袪除掉所有外在的特性，如形状颜色大小等，而形成的抽象。如果非举个例子，你在头脑中想像一个“独立之物”，它的特性除了存在，什么都没有，那么这个东西基本可以“名之”为“1”或“一”了。这个东西叫啥都行，其实呢啥也不叫，名之为“1”或“一”，完全就是因为在数学范畴内叫的方便，毕竟是用来在数量方面进行讨论。更深入的思考就需要学学哲学和《道德经》了。</p>
+<p>数1的定义：人脑对于单独的物体，在数量方面的抽象概念。</p>
+<p>数2的定义：人脑对于单独物体和单独物体，在数量方面的抽象。</p>
+<p>数3的定义：人脑对于单独物体和单独物体和单独物体，在数量方面的抽象。</p>
+<p>以此类推，直到你的脑容量上限，是你能认识的全部数，有关于这部分内容我会单开一篇文章讨论工程极限。</p>
+<p>自然数 ...</p>
+		<p class="content-emphasis"><a href="/有关自然数和自然数内基本问题的总结.html">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
+    <article>
+<abbr class="article-header-date">
+  Mon 09 March 2015
+</abbr> <h1>
+  <a href="/反智主义事例大合集.html" rel="bookmark"
+     title="Permalink to 反智主义事例大合集">
+    反智主义事例大合集
+  </a>
+</h1><div class="article-header-info">
+  <p>
+      Posted by <a href="/author/wanglihe.html">wanglihe</a>
+    in 
+    <a href="/category/uncategorized.html">
+      Uncategorized</a>
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->
+      <div class="summary">
+		<p>我自认为还算是聪明人，比较有智慧，坚信智力的高低是人与其他物种区别的关键因素，人类社会的发展应该向着人的智力越来越高发展。但是，越是坚持越是不能自负，所以认真的记录我发现的反智的现象。本文所谓反智现象指的是不利于高智力的事，包括某些自嘲。本文可能长期更新。</p>
+<p>一、科技业用户界面的设计准则是：不要让我思考。</p>
+<p>二、智力高的人，特别是有智慧的人，往往做事小心，深知到处是坑。普通人却混然不觉天天开心。长此以往，智慧型选手常因思虑过度早亡。</p>
+<p>三、智力高的人因为对未来的担忧和对子女的负责，往往生育较晚也生育较少，而傻逼从来不管。</p>
+<p>四、如果一件产品做到了八成可用，那么骂的和赞的都很多，所以传承、改进、关注度什么的都很好。但一件产品太完美了，从来不会故障，非常好的做该做的，一点多余的都不做，结果就是完全没有人讨论。会用的人得心应手，不会的人完全没听说过这种产品，甚至还在重新发明相同的东西。这种完美的产品随着那一代牛人的远去，也就销声匿迹了。所以一个绝顶聪明的人，做的事非常出类拔萃，做的产品艳绝群芳，往往留不下什么记录，比如辛弃疾，贾诩什么的，而且我相信比辛哥贾哥更牛逼的在历史上就没什么好记录的了，倒是业余军事爱好者岳将军，完全不存在的杨家将天天各种改编 ...</p>
+		<p class="content-emphasis"><a href="/反智主义事例大合集.html">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
+    <article>
+<abbr class="article-header-date">
+  Fri 20 February 2015
+</abbr> <h1>
+  <a href="/加法交换律的证明.html" rel="bookmark"
+     title="Permalink to 加法交换律的证明">
+    加法交换律的证明
+  </a>
+</h1><div class="article-header-info">
+  <p>
+      Posted by <a href="/author/wanglihe.html">wanglihe</a>
+    in 
+    <a href="/category/uncategorized.html">
+      Uncategorized</a>
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->
+      <div class="summary">
+		<p>某一天，突然想到了数学的基础，忘了是什么原因，可能跟计算的有效性相关吧，就想探究一下计算顺序什么的。总之思考到某一层，卡在了加法交换律，我无法证明加法交换律是对的。这一下麻烦了，我发现我的数学大厦危如累卵，假如交换率是错的，我的数学根基有问题，可能很多数学工具无法使用；假如是部分正确的，那么边界在哪，坑又在哪？</p>
+<p>我试图将结合律定义为更基本的定律向上证明出交换律，似乎可以得出结果，但同时我发现我无法证明结合律。我试图回想学交换律时老师讲了什么，岳老师似乎用了1+2=2+1来“说明”了交换律，同理说明了结合律。这一下，我茶不思饭不想，总想着哪能证明交换律，遍查网络基至买了几本数学大师的书，专门看他们怎么讲加法的。无耐，很多看似简单明了的东西，往往很难找到答案。首先，聊这事的人很少，聊到的有人认为是公理，或是显然，完全无法认同。数学证明一但祭出显然大招，往往说明某种逻辑链断裂，嘿嘿。大师的书似乎认为这事太基础了，没细说，当然我只是显然没敢说他们可能也不懂。</p>
+<p>于是，一切还得靠自己。好在我终于得到了结果，并得到很多对计算理论有益的结论 ...</p>
+		<p class="content-emphasis"><a href="/加法交换律的证明.html">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
+    <article>
+<abbr class="article-header-date">
+  Fri 13 February 2015
+</abbr> <h1>
+  <a href="/为什么你应该有个vps（二）.html" rel="bookmark"
+     title="Permalink to 为什么你应该有个vps（二）">
+    为什么你应该有个vps（二）
+  </a>
+</h1><div class="article-header-info">
+  <p>
+      Posted by <a href="/author/wanglihe.html">wanglihe</a>
+    in 
+    <a href="/category/wan-zhuan-vps.html">
+      玩转vps</a>
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->
+      <div class="summary">
+		<p>上一篇讲了我对交流的思考，结论是搞个vps是当下的必需，但是，我等穷逼（联同上一篇，发现我是故意的了么？）对于梦想这种虚无漂渺的东西，再怎么舍得花钱仍旧是觉得小贵。那么vps有没有实际的价值呢？来看看我是怎么说服自己的。</p>
+<p>先说说有关数据的。那么第一条好处呢就是数据的保全性，就是说数据不容易损毁。我们都知道，天有不测风云。用着好好的硬盘，说不定哪天就葛儿屁了。好多小片啊，高清无码啊就消失了。这些也就罢了，收集的老公开房记录啊，离婚用一下值几百万的这种重要信息说没就没了。怎么办呢？有一种神奇但很少用的科技叫备份。凡是重要的数据用另一块盘存一份，藏好。那万一你老公很聪明，把房烧了呢？或是地震呢？移动硬盘，随身携带，那被偷了呢？这个时候，网络的有效性就体现粗来啦。首先，vps选国外的，地理上的隔离，备份很难同时被毁，其次vps身后是专业的数据团队，就算只毁掉这份备份，可能要炸平半个城市甚至半个地球才办得到。有了数据的保全性，我们的一些重要的需要备份的数据，就可以统统的搬到vps上。对于我来讲，多年写下的代码，笔记，非要让我估个价，我认为可能值个50万到100万的，想想vps的价格 ...</p>
+		<p class="content-emphasis"><a href="/为什么你应该有个vps（二）.html">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
+    <article>
+<abbr class="article-header-date">
+  Wed 28 January 2015
+</abbr> <h1>
+  <a href="/为什么你应该有个vps（一）.html" rel="bookmark"
+     title="Permalink to 为什么你应该有个vps（一）">
+    为什么你应该有个vps（一）
+  </a>
+</h1><div class="article-header-info">
+  <p>
+      Posted by <a href="/author/wanglihe.html">wanglihe</a>
+    in 
+    <a href="/category/wan-zhuan-vps.html">
+      玩转vps</a>
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->
+      <div class="summary">
+		<p>千言万语，却不知从何说起。还是先来聊聊作为一个人，我们应该如何与人交流。</p>
+<p>对我来说，有几个基本性质是重要且不言而喻的。</p>
+<p>一是平等性。希望交往的人，除去基本的社会属性，你有听或不听我说话的自由，我也有对你或不对你说的自由。反之，我也可以选择听或不听，你也可以选择说或不说，亦然。双方不能强迫对方必须如何，比如你必须听我说话，你不能说话。</p>
+<p>二是不受干扰性。两者交流之外的第三人，无权对我们双方的交流做出干涉，即不能随意的加入，也不能随意的阻断，更不能篡改我们双方交流的内容，甚至就该不知道我们交流的内容，即使第三方出于某些必要而成为中间转达人。</p>
+<p>三是交流的内容处置权归属于接收者。如果你跟我说了你的好事，我可以记下内容，并转给其他人；如果你跟我说了你的丑事，我也可以记下内容，并转给其他人。你无权要求我不要转达。当然你可以买通我，那是另一回事了。而至于你没张口，我使用偷窃或某些方式逼迫你而得到的，世界是如此无情，虽然我应当为我的行为负责，接受惩罚，但无论怎样，如果我转达给了第三人，你是没有权利要求第三人对此内容做任何操作的，比如，美化或删除。</p>
+<p>但是，互联网时代，我们的交流工具可以简单的满足以上三个条件吗？我发现主流的工具并不完美 ...</p>
+		<p class="content-emphasis"><a href="/为什么你应该有个vps（一）.html">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
+    <article>
+<abbr class="article-header-date">
+  Tue 13 January 2015
+</abbr> <h1>
+  <a href="/刻薄的张开.html" rel="bookmark"
+     title="Permalink to 刻薄的张开">
+    刻薄的张开
+  </a>
+</h1><div class="article-header-info">
+  <p>
+      Posted by <a href="/author/wanglihe.html">wanglihe</a>
+    in 
+    <a href="/category/uncategorized.html">
+      Uncategorized</a>
+    &nbsp;&nbsp;
+  </p>
+</div> <!-- /.article-header-info -->
+      <div class="summary">
+		<p>是的，题目需要反序才能读懂。</p>
+<p>我也没想好这篇总起应该写啥，因为想写的太多了，那就以后补充吧。</p>
+<p>首先批评下自己，不要太完美主义强迫症，否则万事总像这个博客一样，人家五分钟搞定就可以写文章了，我从
+IP 域名 nginx html javascript markdown jekyll ruby mysql php wordpress
+一共干了五个月。妮玛。（似乎让人觉得我其实好笨的，这么简单弄了五个月？别人只是拖延症，我是拖延癌，晚期。为什么没人相信完美主义和强迫症？逼我说实话那么有趣吗？）</p>
+<p>说说开博的原由吧，因为觉得好多人太蠢（注意不是笨，蠢的人分不清蠢和笨，笨的人多想一下能理解蠢和笨的区别），想说的话太多。但是不大敢注册中国服务商的博客，比如csdn，新浪，<span class="strike">觉得不安全</span>，出过安全事故，非常不安全。觉得比较安全的又都在简体中文圈消失了。那为啥不自己搞个微博呢？因为脑子正常的人一般一次性读1400字。为啥不是轻博呢？因为几千年来智者发明了图书馆，如果图馆就够了他们为啥要多此一举呢？后来因为某次被某些人蠢哭了，盛恶心之下注册了某华语圈蓝版好咸问答社区答题 ...</p>
+		<p class="content-emphasis"><a href="/刻薄的张开.html">
+			Read more... <i class="fa fa-arrow-circle-right fa-fw fa-lg"></i> 
+		</a></p>
+      </div>    </article>
+    <hr />
+
+<nav class="index-pager">
+
+</nav> <!-- /index-pager -->
+        </div><!-- /content -->
+
+        <div class="col-md-3 sidebar-nav" id="sidebar">
+
+<div class="row">
+
+
+<div class="col-xs-6 col-md-12">
+<h4><i class="fa fa-folder fa-fw fa-lg"></i> Categories</h4>
+<ul class="list-unstyled category-links">
+  <li><a href="/category/cong-zi-ran-shu-dao-ji-suan-ji.html" >
+    <i class="fa fa-folder-open fa-fw fa-lg"></i> 从自然数到计算机</a></li>
+  <li><a href="/category/uncategorized.html" >
+    <i class="fa fa-folder-open fa-fw fa-lg"></i> Uncategorized</a></li>
+  <li><a href="/category/wan-zhuan-vps.html" >
+    <i class="fa fa-folder-open fa-fw fa-lg"></i> 玩转vps</a></li>
+</ul>
+</div>
+
+</div> <!-- /row -->
+
+
+<h4><i class="fa fa-tags fa-fw fa-lg"></i> Tags</h4>
+<p class="tag-cloud">
+<span class="tag-4">
+    <a href="/tag/elf.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>elf
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/wei-xu.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>位序
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/utf-8.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>utf-8
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/xml.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>xml
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/lfs.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>lfs
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/fu-hao.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>符号
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/xiao-wei.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>小尾
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/zi-jie-xu.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>字节序
+    </a>
+</span>
+<span class="tag-2">
+    <a href="/tag/linux.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>linux
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/jie.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>节
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/elf64.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>elf64
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/vps.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>vps
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/semi-structured.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>semi-structured
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/json.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>json
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/semistructured.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>semistructured
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/smallest.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>smallest
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/utf8.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>utf8
+    </a>
+</span>
+<span class="tag-1">
+    <a href="/tag/shu-xue.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>数学
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/structured.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>structured
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/zi-ran-shu.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>自然数
+    </a>
+</span>
+<span class="tag-4">
+    <a href="/tag/da-wei.html">
+        <i class="fa fa-tag fa-fw fa-lg"></i>大尾
+    </a>
+</span>
+</p>
+
+
+<hr />
+
+        </div><!--/sidebar -->
+      </div><!--/row-->
+    </div><!--/.container /#main-container -->
+
+    <footer id="site-footer">
+ 
+      <address id="site-colophon">
+        <p class="text-center text-muted">
+        Site built using <a href="http://getpelican.com/" target="_blank">Pelican</a>
+        &nbsp;&bull;&nbsp; Theme based on
+        <a href="http://www.voidynullness.net/page/voidy-bootstrap-pelican-theme/"
+           target="_blank">VoidyBootstrap</a> by 
+        <a href="http://www.robertiwancz.com/"
+           target="_blank">RKI</a>  
+        </p>
+      </address><!-- /colophon  -->
+    </footer>
+
+
+    <!-- javascript -->
+
+    <script src="/theme/js/bootstrap.min.js" ></script>
+
+  </body>
+</html>
